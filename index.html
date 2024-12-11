@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emeka's Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-color: #fafafa;
+        font-size: 14px;
+        font-family: Outfit, sans-serif;
+      }
+
+      p {
+        color: #4a4a4a;
+      }
+
+      h2 {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Header area-->
+    <header>
+      <h1 style="color: brown; font-size: 32px; text-align: center">
+        Emeka Allison
+      </h1>
+    </header>
+
+    <main>
+      <section>
+        <img
+          style="
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+          "
+          src="/mer.jpg"
+          alt="profile photo"
+        />
+      </section>
+
+      <section id="about-section">
+        <h2>About me</h2>
+        <p style="line-height: 1.5em">
+          I'm a <strong>software engineer</strong> living in
+          <b>Enugu, Nigeria</b>. I am <em>passionate</em> about coding,
+          <span style="text-decoration: underline; color: crimson"
+            >working</span
+          >
+          in public and making videos and music.<br />
+          I'm also the founder of
+          <a class="link" href="https://domeinitiative.com">Dome Academy</a>. I
+          also buit <a class="link" href="https://spit.sh">Spit.sh</a>, a url
+          shorterner.
+        </p>
+      </section>
+
+      <section id="hobbies-section">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Hiking</li>
+          <li>Coding</li>
+          <li>Listening to music</li>
+          <li>Writing and producing music</li>
+          <li>Playing with my pet</li>
+        </ul>
+      </section>
+
+      <section id="socials-section">
+        <h2>My socials</h2>
+        <ul>
+          <li>
+            <a class="link" href="https://x.com/alliemeka" target="_blank"
+              >Twitter handle</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://instagram.com/alliemeka"
+              target="_blank"
+              >Instagram profile</a
+            >
+          </li>
+          <li>
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/chukwuemeka-allison-7a693a105/"
+              target="_blank"
+              >LinkedIn profile</a
+            >
+          </li>
+          <li>
+            <a class="link" href="https://github.com/Aliemeka" target="_blank"
+              >GitHub profile</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact-section">
+        <h2>Contact me</h2>
+        <form action="/submit-form">
+          <!--Full name-->
+          <div>
+            <label for="full-name">Full name</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              required
+              value="Emeka"
+            />
+          </div>
+
+          <!--Email input-->
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="johndoe@example.com"
+            />
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="2" required></textarea>
+          </div>
+
+          <div>
+            <button class="submit-button" type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
